@@ -1,0 +1,40 @@
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--gray-dim);
+}
+
+.footer-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray);
+  transition: color 0.3s ease, gap 0.3s var(--ease);
+}
+
+.footer-top:hover {
+  color: var(--off-white);
+  gap: 12px;
+}
+
+.footer-top-arrow {
+  transition: transform 0.3s var(--ease);
+}
+
+.footer-top:hover .footer-top-arrow {
+  transform: translateY(-2px);
+}

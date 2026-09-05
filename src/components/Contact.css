@@ -1,0 +1,48 @@
+.contact {
+  padding: 160px 0 140px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-title {
+  font-size: clamp(48px, 9vw, 128px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  color: var(--off-white);
+  margin-bottom: 56px;
+}
+
+.contact-title em {
+  font-style: italic;
+}
+
+.contact-title-line {
+  display: block;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 40px;
+}
+
+.contact-link {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--off-white-dim);
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--off-white);
+  border-color: var(--spectral-dim);
+}
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 110px 0 90px;
+  }
+}
